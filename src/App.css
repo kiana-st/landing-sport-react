@@ -1,0 +1,10 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  font-family: 'iransans';
+}
+@font-face {
+  font-family: 'iransans';
+  src: local('iransans'), url(./components//Fonts/IRANSans.ttf) format('truetype');
+}

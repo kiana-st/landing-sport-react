@@ -1,0 +1,230 @@
+.slider {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: #333;
+    padding-bottom: 900px;
+}
+
+.text-title {
+    font-size: 2vw;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+    color: #fff;
+    text-align: right;
+}
+
+.card-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.card-wrapper :hover {
+    outline: none;
+    border: none;
+}
+
+.card-wrapper :focus {
+    outline: none;
+    border: none;
+}
+
+.card-wrapper :active {
+    outline: none;
+    border: none;
+}
+
+.card {
+    width: 100%;
+    height: 450px;
+    border-radius: 1.25rem !important;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.jjj{
+    padding-bottom:100vh
+}
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: .5s;
+}
+
+.cardpic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-image img:hover {
+    opacity: .4;
+    transition: .5s;
+}
+
+.card-image:hover {
+    transform: translateY(-100px);
+    transition: all .9s;
+}
+
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    font-size: 23px;
+    color: #333;
+    font-weight: bold;
+    margin: 0 6px;
+    transition: .4s;
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.card:hover .social-icons li a {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.social-icons li a:hover{
+    background: #000;
+    transition: .2s;
+}
+.icon {
+    transition: .8s;
+}
+
+.icon:hover {
+    transform: rotateY(360deg);
+    color: #fff;
+}
+
+.card:hover li:nth-child(1) a {
+    transition-delay: .1s;
+}
+
+.card:hover li:nth-child(2) a {
+    transition-delay: .2s;
+}
+
+.card:hover li:nth-child(3) a {
+    transition-delay: .3s;
+}
+
+.card:hover li:nth-child(4) a {
+    transition-delay: .4s;
+}
+
+.card:hover li:nth-child(5) a {
+    transition-delay: .5s;
+}
+
+.card:hover li:nth-child(6) a {
+    transition-delay: .6s;
+}
+.details{
+    position: absolute;
+    bottom: 400px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+    padding:10px;
+    transition: .6s;
+}
+.details h2{
+    margin:30PX 0;
+    padding:0;
+    text-align: center;
+}
+.job-title{
+    font-size: 16px;
+    line-height: 2;
+    color:#333;
+    font-weight: 300;
+    display: block;
+}
+.card:hover .details{
+    bottom:0;
+}
+.carousel .slick-dots{
+    bottom: -2.5vw;
+}
+.slick-dots li button{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.slick-dots li button::before{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    content: "";
+    text-align: center;
+    opacity: .5;
+    color:#000;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    transition: all .3s ease-in-out;
+}
+.slick-active button{
+    border-color: tomato !important;
+}
+
+.slick-active:hover button{
+    border-color: tomato !important;
+
+}
+.slick-active button::before{
+    background: tomato !important;
+    opacity: 1;
+}
+.slick-prev, .slick-next{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+}
+.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus{
+    color: #fff;
+    outline: none;
+    background: #fff;
+}
+.slick-prev::before,.slick-next::before{
+    color: #000;
+    font-family: sans-serif;
+}
+.slick-next{
+    right: -55px;
+}
+.slick-prev{
+    left: -55px;
+}

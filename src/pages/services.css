@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .zoom {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    z-index: 1000;
+    overflow: hidden;
+    background: url('../images/bg.jpg');
+    background-size: cover;
+}
+
+.zoom::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(transparent, #fff);
+    bottom: 0%;
+}
+
+#pic1 {
+    position: absolute;
+    transform: translateX(-55%);
+    left: 50%;
+    z-index: 100;
+}
+
+#pic2 {
+    position: absolute;
+    z-index: 100;
+}
+
+#text11 {
+    position: absolute;
+    transform: translateY(50%);
+}
+
+.cont{
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+}
+.cont h2{
+    font-size: 3em;
+    font-weight: 500;
+}
+.cont p{
+    font-size: 1.5rem;
+    text-align: right;
+    margin: 30px 0;
+} */
+
+
+body {
+    margin:0;
+    padding:0;
+    font-family:verdana;
+  }
+  #scd{
+    height: none !important;
+  }
+  .secondDiv {
+    height:100vh;  
+    background-image: url('../images/pe.jpg');
+    background-size:cover;
+    background-position: 50%;
+    background-attachment:fixed;
+  }
+  .thirdDiv {
+    height:200vh;  
+    background-color:hsl(240, 40, 100);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .textChange {
+    width:70%;
+    text-align:justify;
+    color:hsl(360,0,0);
+  }
+  .fourthDivText {
+    height:210vh;  
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background-image: url('../images/otto.jpg');
+    background-size:cover;
+    background-position:50%;
+    background-attachment:fixed;
+  }
+  #root {height:100vh;position:relative}
+  
+  .scroller {
+    overflow-y:auto;
+    /* https://images.unsplash.com/photo-1504642641925-1c733fb8e8e1?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=d6a3282e02e7678ec18c71743f5656bb */
+    background-image: url('../images/go.jpg');
+    background-attachment:fixed;
+    background-size:cover;
+    background-position: 50% 50%;
+    overflow-x:hidden;
+  }
+  
+  .firstDivText {
+    height:210vh;
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+  }
+  
+  .text {
+    
+    font-weight:bold;  
+    
+  }
